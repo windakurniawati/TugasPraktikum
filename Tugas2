@@ -1,0 +1,39 @@
+public class TugasPraktikum2 {
+    public static void main(String[] args) {
+         int a=0;
+        int nilai[]=new int[]{76,60,90,86};
+        double ratarata=0;
+        System.out.println("Data pada array");
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print(nilai[i]+"\t");
+            ratarata+=nilai[i];
+            
+    }ratarata/=nilai.length;
+    System.out.println("\n");
+        System.out.println("Nilai rata-rata : " + ratarata);
+        for (int i = 0; i < nilai.length; i++) {
+            if(ratarata<nilai[i]){
+                a++;
+                
+                
+    }       
+        }
+        System.out.println("Siswa yang lulus ujian sebanyak :" + a);
+        for (int i = 0; i < nilai.length; i++) {
+            if(ratarata<nilai[i]){
+                int x=nilai[i];
+                        System.out.println("Siswa bernilai :" +x);
+
+            }
+        }
+    }
+}
+
+Data pada array
+76	60	90	86	
+
+Nilai rata-rata : 78.0
+Siswa yang lulus ujian sebanyak :2
+Siswa bernilai :90
+Siswa bernilai :86
+BUILD SUCCESSFUL (total time: 0 seconds)
