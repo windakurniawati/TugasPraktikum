@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class LatihanPraktikum4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String cari;
+        System.out.print("Masukkan kalimat atau kata: ");
+        cari = input.nextLine();
+        
+        int a = 0;
+        for (int i = 0; i < cari.length(); i++) {
+            if (cari.charAt(i)== 'a'){
+                a++;
+            }
+            
+        }
+        System.out.println("Jumlah huruf a pada kalimat diatas adalah : " + a);
+    }
+    
+}
+
+Masukkan kalimat atau kata: halo namaku winda
+Jumlah huruf a pada kalimat diatas adalah : 4
+BUILD SUCCESSFUL (total time: 19 seconds)
